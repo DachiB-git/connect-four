@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+}
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(7, min-content);
+  margin: auto;
+  justify-content: center;
+  /* gap: 0.5em; */
+  background-color: aqua;
+  padding: 0.5em;
+  column-gap: 0.5em;
+}
+.token {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+  pointer-events: none;
+}
+.token:last-child {
+  margin: 0;
+}
+.token-yellow {
+  background-color: yellow;
+}
+.token-red {
+  background-color: red;
+}
+.column:hover {
+  filter: brightness(80%);
+}
